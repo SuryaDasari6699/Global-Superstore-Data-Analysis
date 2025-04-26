@@ -1,55 +1,40 @@
-## ❓ Business Questions to Answer
+Business Questions those answered in PowerBI Dsahboards.
 
+1. Generic Questions (Answered in General Overview across all Dashboards)
+    - How many distinct cities, states, and countries are present in the dataset?
+    - Which market and region do each customer belong to?
+    - What is the distribution of customer segments across regions?
+    - Which shipping modes are most frequently used?
 
-### 📋 Generic Questions
-*(Answered in: General Overview Section and across all Dashboards)*
+2. Product Analysis (Answered in Underperforming Product Categories Dashboard)
+    - How many distinct product categories and sub-categories are there?
+    - Which product category generates the highest total sales?
+    - Which sub-category has the highest profit margin?
+    - Which product sub-categories consistently generate negative profits?
+    - Which product category received the highest discount percentages?
+    - How does the average profit vary across product categories and sub-categories?
+    - Which products have the highest sales quantity but low profitability?
+    - What is the contribution of each product category to the overall revenue?
 
-- How many distinct cities, states, and countries are present in the dataset?
-- Which market and region do each customer belong to?
-- What is the distribution of customer segments across regions?
-- Which shipping modes are most frequently used?
+3.Sales and Discount Analysis (Answered in Underperforming Product Categories Dashboard and General Analysis)
+    - What is the trend of total sales and profit over the years?
+    - In which months do sales typically peak across regions?
+    - How does discount percentage affect profit margins across different products?
+    - Which discount range (0–10%, 11–30%, 31–50%) generates the highest overall profit?
+    - What is the relationship between discount levels and number of orders?
+    - Which product categories remain profitable despite heavy discounting?
 
+4. Shipping and Operations Analysis (Answered in Shipping Cost Inefficiency Dashboard)
+    - Which shipping modes incur the highest shipping costs?
+    - Are there regions where shipping costs exceed the profits earned?
+    - Which regions have the lowest net profit after shipping costs are deducted?
+    - How does shipping cost vary by product category?
+    - What is the average shipping duration across different markets and regions?
 
-### 🛍️ Product Analysis
-*(Answered in: Underperforming Product Categories Dashboard)*
-
-- How many distinct product categories and sub-categories are there?
-- Which product category generates the highest total sales?
-- Which sub-category has the highest profit margin?
-- Which product sub-categories consistently generate negative profits?
-- Which product category received the highest discount percentages?
-- How does the average profit vary across product categories and sub-categories?
-- Which products have the highest sales quantity but low profitability?
-- What is the contribution of each product category to the overall revenue?
-
-
-### 💰 Sales and Discount Analysis
-*(Answered in: Underperforming Product Categories Dashboard and General Analysis)*
-
-- What is the trend of total sales and profit over the years?
-- In which months do sales typically peak across regions?
-- How does discount percentage affect profit margins across different products?
-- Which discount range (0–10%, 11–30%, 31–50%) generates the highest overall profit?
-- What is the relationship between discount levels and number of orders?
-- Which product categories remain profitable despite heavy discounting?
-
-
-### 🚚 Shipping and Operations Analysis
-*(Answered in: Shipping Cost Inefficiency Dashboard)*
-
-- Which shipping modes incur the highest shipping costs?
-- Are there regions where shipping costs exceed the profits earned?
-- Which regions have the lowest net profit after shipping costs are deducted?
-- How does shipping cost vary by product category?
-- What is the average shipping duration across different markets and regions?
-
-
-### 👤 Customer Segmentation Analysis
-*(Answered in: Customer Segment Profitability Dashboard)*
-
-- Which customer segment (Consumer, Corporate, Home Office) generates the most revenue?
-- Which segment delivers the highest profit margin?
-- What is the average order value across different customer segments?
-- Which customer segment is most sensitive to discounts?
-- Which region has the highest concentration of Home Office customers?
-- How does customer buying behavior differ across markets (e.g., APAC, EMEA)?
+5. Customer Segmentation Analysis (Answered in Customer Segment Profitability Dashboard)
+    - Which customer segment (Consumer, Corporate, Home Office) generates the most revenue?
+    - Which segment delivers the highest profit margin?
+    - What is the average order value across different customer segments?
+    - Which customer segment is most sensitive to discounts?
+    - Which region has the highest concentration of Home Office customers?
+    - How does customer buying behavior differ across markets (e.g., APAC, EMEA)?
