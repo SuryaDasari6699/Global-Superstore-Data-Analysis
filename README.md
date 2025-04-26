@@ -3,14 +3,12 @@
 ## 📌 About
 A complete data analysis and visualization project using **SQL**, **Excel**, and **Power BI** to uncover sales trends, shipping inefficiencies, and customer behavior in a global retail dataset.
 
----
 
 ## 🧠 Overview
 This project analyzes a global superstore’s sales data to generate actionable insights. It focuses on trends in product performance, customer segmentation, operational inefficiencies, and the financial impact of discounts and delivery delays.
 
 The approach follows a structured ETL and BI development pipeline—transforming raw transactional data into a clean, analytical star schema and delivering visual dashboards in Power BI.
 
----
 
 ## 🎯 Business Objectives
 
@@ -20,7 +18,6 @@ The approach follows a structured ETL and BI development pipeline—transforming
 4. Optimize discount strategies based on margin analysis  
 5. Quantify loss due to delayed high-priority shipments
 
----
 
 ## 🧩 Analytical Approach
 
@@ -37,7 +34,6 @@ The approach follows a structured ETL and BI development pipeline—transforming
 - Built 5 interactive dashboard pages for key business areas  
 - Used slicers, bookmarks, and drill-throughs for dynamic exploration  
 
----
 
 ## 🗃️ Dataset Summary
 
@@ -46,7 +42,6 @@ The approach follows a structured ETL and BI development pipeline—transforming
 - 3 product categories: Furniture, Technology, Office Supplies  
 - Covers 7 global markets and multiple countries  
 
----
 
 ## 🧩 Data Structures (Star Schema)
 
@@ -71,7 +66,7 @@ All tables are joined using foreign key constraints `Customer_ID` and `Product_I
 | COGS               | FLOAT         | Cost of goods sold                          |
 | Shipping Cost      | FLOAT         | Shipping expense                            |
 
-### 🔹 Dimension Table: `DimCustomer`
+### 🔹 Dimension Table: `Customer Table`
 
 | Column Name     | Data Type | Description                          |
 |-----------------|-----------|--------------------------------------|
@@ -83,7 +78,7 @@ All tables are joined using foreign key constraints `Customer_ID` and `Product_I
 | Market          | TEXT      | Global market (e.g., EMEA, APAC)     |
 | Region          | TEXT      | Regional grouping                    |
 
-### 🔹 Dimension Table: `DimProduct`
+### 🔹 Dimension Table: `Product Table`
 
 | Column Name     | Data Type | Description                          |
 |-----------------|-----------|--------------------------------------|
@@ -93,7 +88,65 @@ All tables are joined using foreign key constraints `Customer_ID` and `Product_I
 | Sub-Category    | TEXT      | Finer product grouping               |
 | Price Per Unit  | FLOAT     | Unit pricing                         |
 
+
+## ❓ Business Questions to Answer
+
+
+### 📋 Generic Questions
+- How many distinct cities, states, and countries are present in the dataset?
+- Which market and region do each customer belong to?
+- What is the distribution of customer segments across regions?
+- Which shipping modes are most frequently used?
+
 ---
+
+### 🛍️ Product Analysis
+- How many distinct product categories and sub-categories are there?
+- Which product category generates the highest total sales?
+- Which sub-category has the highest profit margin?
+- Which product sub-categories consistently generate negative profits?
+- Which product category received the highest discount percentages?
+- How does the average profit vary across product categories and sub-categories?
+- Which products have the highest sales quantity but low profitability?
+- What is the contribution of each product category to the overall revenue?
+
+---
+
+### 💰 Sales and Discount Analysis
+- What is the trend of total sales and profit over the years?
+- In which months do sales typically peak across regions?
+- How does discount percentage affect profit margins across different products?
+- Which discount range (0–10%, 11–30%, 31–50%) generates the highest overall profit?
+- What is the relationship between discount levels and number of orders?
+- Which product categories remain profitable despite heavy discounting?
+
+---
+
+### 🚚 Shipping and Operations Analysis
+- Which shipping modes incur the highest shipping costs?
+- Are there regions where shipping costs exceed the profits earned?
+- Which regions have the lowest net profit after shipping costs are deducted?
+- How does shipping cost vary by product category?
+- What is the average shipping duration across different markets and regions?
+
+---
+
+### 👤 Customer Segmentation Analysis
+- Which customer segment (Consumer, Corporate, Home Office) generates the most revenue?
+- Which segment delivers the highest profit margin?
+- What is the average order value across different customer segments?
+- Which customer segment is most sensitive to discounts?
+- Which region has the highest concentration of Home Office customers?
+- How does customer buying behavior differ across markets (e.g., APAC, EMEA)?
+
+---
+
+### 🕒 Priority and Delivery Analysis
+- How many high-priority orders are delayed beyond expected shipping times?
+- What is the total profit lost due to late shipments of high-priority orders?
+- Which regions experience the most delayed high-priority shipments?
+- How does order priority correlate with shipping cost and delivery time?
+
 
 ## 📊 Dashboards Created
 
@@ -109,8 +162,6 @@ All tables are joined using foreign key constraints `Customer_ID` and `Product_I
    - Segment-wise profit margin, AOV  
    - Visuals: KPI Cards, Pie Chart, Donut Chart  
 
----
-
 ## 📁 Files Included
 
 | File Name                          | Description                             |
@@ -122,8 +173,6 @@ All tables are joined using foreign key constraints `Customer_ID` and `Product_I
 | `Superstore Sales Data Project.xlsx` | Planning, metrics, data dictionary     |
 | `SuperStore Sales.pbix`           | Final Power BI dashboard file           |
 
----
-
 ## 📌 Key Insights
 
 - Sub-categories like **Storage** and **Binders** had high sales but negative margins  
@@ -132,16 +181,12 @@ All tables are joined using foreign key constraints `Customer_ID` and `Product_I
 - Discounts above **30%** significantly harmed profitability  
 - Delayed high-priority shipments caused measurable loss in certain regions  
 
----
-
 ## ▶️ How to Run the Project
 
 1. Run `Super Store Sales.sql` in your SQL environment to create and populate schema  
 2. Load the `.csv` files into Power BI or SQL  
 3. Open `SuperStore Sales.pbix` and refresh connections  
 4. Use slicers, filters, and visuals to explore insights  
-
----
 
 ## 🙋 Author
 
